@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather_App_By_Kailash</title>
+</head>
+
+<body>
+
+    <!-- html code -->
+    <!-- creating a div of class "card" in which the weather information is going to be display -->
+    <!-- it contains three sections 1-search section, 2-error section, 3-weather section -->
+    <div class="container-1">
+
+        <!-- it is a search container containing seacrch box and search icon in image formatt -->
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="search for a city" spellcheck="false">
+            <button><img src="images/search.png" alt="can't load image"></button>
+        </div>
+
+        <!-- this container is to check if the entered city is not correct then it displays the text inside it -->
+        <div class="error">
+            <p>Invalid City. Please enter correct city name!</p>
+        </div>
+
+        <!-- this container with class "weather contining the information of the temperature, wind speed, and humidity" -->
+        <div class="weather">
+            <!-- here is the image which displayed according to the weather condition -->
+            <img src="images/rain.png" alt="can't load image" class="weather-icon">
+            <!-- it displays the temperature -->
+            <h1 class="temp">22&#176</h1>
+            <!-- it displays the city name that is going to be searched -->
+            <h2 class="city">New York</h2>
+
+            <!-- this container displays the information about the humidity and wind speed -->
+            <div class="details">
+                <!-- first container display the  humidity -->
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <!-- second container displays the wind speed info -->
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark py-5">
+       
+            <h1>Kailash</h1>
+            <p>Copyright &copy; 2023</p>
+    
+    </footer>
+
+    <!-- Javascript file link  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
